@@ -33,10 +33,9 @@ cask "mcpsight" do
 
   binary "mcpsight"
 
-  postflight do
-    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/mcpsight"]
-    end
+  # The binary is not notarized, so clear Gatekeeper's quarantine flag.
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "mcpsight"], chdir: ".", must_succeed: false
   end
 
   # No zap stanza required
