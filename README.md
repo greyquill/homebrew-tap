@@ -4,7 +4,7 @@ Homebrew packages published by [Greyquill Software](https://www.greyquill.io).
 
 ## MCPsight
 
-[MCPsight](https://www.greyquill.io/mcpsight/) inspects an MCP server before you
+[MCPsight](https://mcpsight.dev/) inspects an MCP server before you
 trust it: what it costs in tokens, what it can reach, and whether it changed.
 
 ```console
