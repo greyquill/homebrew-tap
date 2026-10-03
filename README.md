@@ -1,3 +1,12 @@
+<p>
+  <a href="https://mcpsight.dev">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://mcpsight.dev/brand/lockup-dark.svg">
+      <img src="https://mcpsight.dev/brand/lockup.svg" alt="mcpsight" width="182" height="40">
+    </picture>
+  </a>
+</p>
+
 # Greyquill Homebrew tap
 
 Homebrew packages published by [Greyquill Software](https://www.greyquill.io).
